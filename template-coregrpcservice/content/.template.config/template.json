@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "yaofeng",
+  "classifications": [ "Common", "Console" ],
+  "identity": "Overt.GrpcTemplate.Service",
+  "name": "Overt.GrpcTemplate.Service",
+  "shortName": "SodaoCoreGrpcService",
+  "preferNameDirectory": true,
+  "symbols": {
+    "namespace": {
+      "type": "parameter",
+      "isRequired": true,
+      "description": "命名空间[namespace]",
+      "defaultValue": "Overt.GrpcTemplate.Service",
+      "replaces": "Overt.GrpcTemplate.Service"
+    },
+    "service": {
+      "type": "parameter",
+      "isRequired": true,
+      "description": "proto file: service [service] {}",
+      "defaultValue": "TemplateService1",
+      "replaces": "TemplateService"
+    },
+    "servicename": {
+      "type": "parameter",
+      "isRequired": true,
+      "description": "appsettings.json: GrpcServer.Service.Name [servicename]",
+      "defaultValue": "SodaoGrpcTemplateService1",
+      "replaces": "SodaoGrpcTemplateService"
+    },
+    "port": {
+      "type": "parameter",
+      "isRequired": true,
+      "description": "appsettings.json: GrpcServer.Service.Port [serviceport]",
+      "defaultValue": "10001",
+      "replaces": "10000"
+    }
+  }
+}

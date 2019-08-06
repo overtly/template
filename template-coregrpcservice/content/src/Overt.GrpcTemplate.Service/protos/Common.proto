@@ -1,0 +1,65 @@
+﻿syntax = "proto3";
+package Overt.GrpcTemplate.Service.Grpc;
+
+// bool 的查询
+enum EnumBoolValue {
+	All = 0;
+	True = 1;
+	False = 2;
+}
+
+message EmptyRequest { 
+}
+
+message Int32Request {
+	bool IsMaster = 1; // 是否查询主库
+	int32 Value = 2; 
+}
+
+message Int64Request {
+	bool IsMaster = 1; // 是否查询主库
+	int64 Value = 2; 
+}
+
+message StringRequest {
+	bool IsMaster = 1; // 是否查询主库
+	string Value = 2; 
+}
+
+message StringArrayRequest {
+	bool IsMaster = 1; // 是否查询主库
+	repeated string Value = 2; 
+}
+
+
+message EmptyResponse { 
+}
+
+message BoolResponse {
+	bool Success = 1;
+	string ErrorMsg = 2;
+}
+
+message StringResponse {
+	bool Success = 1;
+	string ErrorMsg = 2;
+	string Data = 3;
+}
+
+message Int32Response {
+	bool Success = 1;
+	string ErrorMsg = 2;
+	int32 Data = 3;
+}
+
+message Int64Response {
+	bool Success = 1;
+	string ErrorMsg = 2;
+	int64 Data = 3;
+}
+
+message StringArrayResponse {
+	bool Success = 1;
+	string ErrorMsg = 2;
+	repeated string Data = 3;
+}
