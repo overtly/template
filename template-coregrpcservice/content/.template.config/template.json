@@ -4,29 +4,29 @@
   "classifications": [ "Common", "Console" ],
   "identity": "Overt.GrpcTemplate.Service",
   "name": "Overt.GrpcTemplate.Service",
-  "shortName": "SodaoCoreGrpcService",
+  "shortName": "OvertCoreGrpcService",
   "preferNameDirectory": true,
   "symbols": {
     "namespace": {
       "type": "parameter",
       "isRequired": true,
       "description": "命名空间[namespace]",
-      "defaultValue": "Overt.GrpcTemplate.Service",
-      "replaces": "Overt.GrpcTemplate.Service"
+      "defaultValue": "Overt.GrpcTemplate",
+      "replaces": "Overt.GrpcTemplate"
     },
     "service": {
       "type": "parameter",
       "isRequired": true,
       "description": "proto file: service [service] {}",
-      "defaultValue": "TemplateService1",
+      "defaultValue": "TemplateService",
       "replaces": "TemplateService"
     },
     "servicename": {
       "type": "parameter",
       "isRequired": true,
       "description": "appsettings.json: GrpcServer.Service.Name [servicename]",
-      "defaultValue": "SodaoGrpcTemplateService1",
-      "replaces": "SodaoGrpcTemplateService"
+      "defaultValue": "OvertGrpcTemplateService",
+      "replaces": "OvertGrpcTemplateService"
     },
     "port": {
       "type": "parameter",
