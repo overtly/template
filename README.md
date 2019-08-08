@@ -1,110 +1,94 @@
 # Template
 
-<a name="gn3gvm"></a>
-### [](#gn3gvm)1. GrpcServiceTemplate
+<a name="Template"></a>
+# 1. GrpcServiceTemplate<br />
 
-> Ô´ÂëµØÖ·£º[https://github.com/mojinxun/template.git](https://github.com/mojinxun/template.git)
-> 
-> identity£ºOvert.GrpcTemplate.Service v 1.0.0
+- æºç åœ°å€ï¼š[https://github.com/mojinxun/template.git](https://github.com/mojinxun/template.git)
+- identityï¼šOvert.GrpcTemplate.Service v 1.0.1
 
-
-<a name="q34oyk"></a>
-#### [](#q34oyk)£¨1£©°²×°
+<a name="2f085113"></a>
+#### ï¼ˆ1ï¼‰å®‰è£…
 > dotnet new -i Overt.GrpcTemplate.Service
 
 
-<a name="4pgrpu"></a>
-#### [](#4pgrpu)£¨2£©²é¿´
+<a name="1d603c30"></a>
+#### ï¼ˆ2ï¼‰æŸ¥çœ‹
 > dotnet new -l
 
+![image.png](https://cdn.nlark.com/yuque/0/2019/png/186782/1565257402246-18c4c915-062b-4bcd-9618-7351bc4b4e33.png#align=left&display=inline&height=562&name=image.png&originHeight=562&originWidth=886&size=46957&status=done&width=886)
 
-![](https://cdn.nlark.com/yuque/0/2018/png/186782/1543211226316-9f933dbc-1d42-4137-ba6c-12521bf8c77c.png#width=827)
+å¯ä»¥çœ‹åˆ°å­˜åœ¨ OvertCoreGrpcServiceçš„ä¸€é¡¹å­˜åœ¨ï¼Œè¯¥é¡¹çš„identityä¸ºOvert.GrpcTemplate.Service
 
-¿ÉÒÔ¿´µ½´æÔÚ OvertCoreGrpcServiceµÄÒ»Ïî´æÔÚ£¬¸ÃÏîµÄidentityÎªOvert.GrpcTemplate.Service
 
-<a name="cnpnnb"></a>
-#### [](#cnpnnb)£¨3£©Ğ¶ÔØ
+<a name="51116d84"></a>
+#### ï¼ˆ3ï¼‰å¸è½½
 > dotnet new -u Overt.GrpcTemplate.Service
 
 
-<a name="lxswcy"></a>
-#### [](#lxswcy)£¨4£©Ê¹ÓÃ
-> 
-> // ×¢Òâ²ÎÊı£¬Ê¹ÓÃÒ»ÏÂÃüÁî²é¿´²ÎÊı
+<a name="da45e78c"></a>
+#### ï¼ˆ4ï¼‰ä½¿ç”¨
+> // æ³¨æ„å‚æ•°ï¼Œä½¿ç”¨ä¸€ä¸‹å‘½ä»¤æŸ¥çœ‹å‚æ•°
 > dotnet new OvertCoreGrpcService -h
-> 
 
-![](https://cdn.nlark.com/yuque/0/2018/png/186782/1543211078199-939ca248-be1e-468e-a86d-b6465dcdfb39.png#width=827)
-
+![image.png](https://cdn.nlark.com/yuque/0/2019/png/186782/1565257440213-7f98c5b5-254d-45a4-841b-2f611eec6069.png#align=left&display=inline&height=562&name=image.png&originHeight=562&originWidth=886&size=57003&status=done&width=886)
 
 ```csharp
--na: ´ú±íÃüÃû¿Õ¼ä£¬[namespace].Service£¬ÖĞ¼äµÄ²¿·Ö
--s: ´ú±íµÄprotobufÎÄ¼şÖĞµÄ·şÎñÃû³Æ¶¨Òå£¬±ØĞëÎªÓ¢ÎÄ£¬ÎŞÌØÊâ×Ö·û
--se: ´ú±íµÄÊÇÕâ¸ö·şÎñÆô¶¯ºó×¢²áµ½ConsulµÄÃû³Æ£¬¼´ÅäÖÃÎÄ¼şÖĞµÄName£¬Ò»°ãÎªÕû¸ö·şÎñÃüÃû¿Õ¼äÈ¥³ıµã£¬Overt.Grpc.Service => OvertGrpcService
--p: ´ú±íµÄÊÇÕâ¸ö·şÎñÆô¶¯Õ¼ÓÃµÄ¶Ë¿Ú£¬¼´ÅäÖÃÎÄ¼şÖĞµÄPort
+-na: ä»£è¡¨å‘½åç©ºé—´ï¼Œ[namespace].Serviceï¼Œä¸­é—´çš„éƒ¨åˆ†
+-s: ä»£è¡¨çš„protobufæ–‡ä»¶ä¸­çš„æœåŠ¡åç§°å®šä¹‰ï¼Œå¿…é¡»ä¸ºè‹±æ–‡ï¼Œæ— ç‰¹æ®Šå­—ç¬¦
+-se: ä»£è¡¨çš„æ˜¯è¿™ä¸ªæœåŠ¡å¯åŠ¨åæ³¨å†Œåˆ°Consulçš„åç§°ï¼Œå³é…ç½®æ–‡ä»¶ä¸­çš„Nameï¼Œä¸€èˆ¬ä¸ºæ•´ä¸ªæœåŠ¡å‘½åç©ºé—´å»é™¤ç‚¹ï¼ŒOvert.Grpc.Service => OvertGrpcService
+-p: ä»£è¡¨çš„æ˜¯è¿™ä¸ªæœåŠ¡å¯åŠ¨å ç”¨çš„ç«¯å£ï¼Œå³é…ç½®æ–‡ä»¶ä¸­çš„Port
 
-// Ê¾Àı
+// ç¤ºä¾‹
 dotnet new OvertCoreGrpcService -na Overt.GrpcTest -s GrpcTestService -se OvertGrpcTestService -p 10001
 ```
 
+**æœ€ç»ˆç»“æœï¼š**
 
-**×îÖÕ½á¹û£º**
+![](https://cdn.nlark.com/yuque/0/2018/png/186782/1543215369051-523eddb4-091c-4c44-92c7-d4e51af361b1.png#width=703#align=left&display=inline&height=181&originHeight=181&originWidth=703&status=done&width=703)
 
-![](https://cdn.nlark.com/yuque/0/2018/png/186782/1543215369051-523eddb4-091c-4c44-92c7-d4e51af361b1.png#width=703)
-
-**Ê¹ÓÃPowerShellÖ´ĞĞinit.ps1ÎÄ¼ş£¬ĞŞ¸ÄÎÄ¼ş¼ĞÃû³Æ**
-
+**ä½¿ç”¨PowerShellæ‰§è¡Œinit.ps1æ–‡ä»¶ï¼Œä¿®æ”¹æ–‡ä»¶å¤¹åç§°**
 
 
+<a name="67cb4465"></a>
+### 2. TemplateService
 
-<a name="85knsx"></a>
-### [](#85knsx)2. TemplateService
+- æºç åœ°å€ï¼š[https://github.com/mojinxun/template.git](http://10.0.150.1/dotnetcore/template.git)
+- identityï¼šOvert.Template.Service v 1.0.0
 
-> Ô´ÂëµØÖ·£º[https://github.com/mojinxun/template.git](https://github.com/mojinxun/template.git)
-> 
-> identity£ºOvert.Template.Service v 1.0.0
-
-
-<a name="06g7ih"></a>
-#### [](#06g7ih)£¨1£©°²×°
+<a name="2f085113-1"></a>
+#### ï¼ˆ1ï¼‰å®‰è£…
 > dotnet new -i Overt.Template.Service
 
 
-<a name="3awmsl"></a>
-#### [](#3awmsl)£¨2£©²é¿´
+<a name="1d603c30-1"></a>
+#### ï¼ˆ2ï¼‰æŸ¥çœ‹
 > dotnet new -l
 
+![image.png](https://cdn.nlark.com/yuque/0/2019/png/186782/1565257468588-e7a037d3-0f1b-4f27-8856-47a64b94081a.png#align=left&display=inline&height=562&name=image.png&originHeight=562&originWidth=886&size=47292&status=done&width=886)
 
-![](https://cdn.nlark.com/yuque/0/2018/png/186782/1543211222374-e9cb9d24-654f-4531-ad7f-9202e171ed33.png#width=827)
+å¯ä»¥çœ‹åˆ°å­˜åœ¨ OvertCoreServiceçš„ä¸€é¡¹å­˜åœ¨ï¼Œè¯¥é¡¹çš„identityä¸ºOvert.Template.Service
 
-¿ÉÒÔ¿´µ½´æÔÚ OvertCoreServiceµÄÒ»Ïî´æÔÚ£¬¸ÃÏîµÄidentityÎªOvert.Template.Service
-
-<a name="8yihpd"></a>
-#### [](#8yihpd)£¨3£©Ğ¶ÔØ
+<a name="51116d84-1"></a>
+#### ï¼ˆ3ï¼‰å¸è½½
 > dotnet new -u Overt.Template.Service
 
 
-<a name="4lxkpw"></a>
-#### [](#4lxkpw)£¨4£©Ê¹ÓÃ
-> 
-> // ×¢Òâ²ÎÊı£¬Ê¹ÓÃÒ»ÏÂÃüÁî²é¿´²ÎÊı
+<a name="da45e78c-1"></a>
+#### ï¼ˆ4ï¼‰ä½¿ç”¨
+> // æ³¨æ„å‚æ•°ï¼Œä½¿ç”¨ä¸€ä¸‹å‘½ä»¤æŸ¥çœ‹å‚æ•°
 > dotnet new OvertCoreService -h
-> 
 
-![](https://cdn.nlark.com/yuque/0/2018/png/186782/1543211288960-5ad2364b-4ab4-41fd-b494-3987df89494f.png#width=827)
-
+![image.png](https://cdn.nlark.com/yuque/0/2019/png/186782/1565257482723-3e7d3f17-f75f-4030-b965-96f50fc3d204.png#align=left&display=inline&height=319&name=image.png&originHeight=319&originWidth=904&size=37614&status=done&width=904)
 
 ```csharp
--na: ´ú±íÃüÃû¿Õ¼ä£¬[namespace].Service£¬ÖĞ¼äµÄ²¿·Ö
+-na: ä»£è¡¨å‘½åç©ºé—´ï¼Œ[namespace].Serviceï¼Œä¸­é—´çš„éƒ¨åˆ†
 
-// Ê¾Àı
+// ç¤ºä¾‹
 dotnet new OvertCoreService -na Overt.Test
 ```
 
+**æœ€ç»ˆç»“æœï¼š**
 
+![](https://cdn.nlark.com/yuque/0/2018/png/186782/1543215445020-b54de14a-f267-4cb0-8754-bc694302125e.png#width=721#align=left&display=inline&height=157&originHeight=157&originWidth=721&status=done&width=721)
 
-**×îÖÕ½á¹û£º**
-
-![](https://cdn.nlark.com/yuque/0/2018/png/186782/1543215445020-b54de14a-f267-4cb0-8754-bc694302125e.png#width=721)
-
-**Ê¹ÓÃPowerShellÖ´ĞĞinit.ps1ÎÄ¼ş£¬ĞŞ¸ÄÎÄ¼ş¼ĞÃû³Æ**
+**ä½¿ç”¨PowerShellæ‰§è¡Œinit.ps1æ–‡ä»¶ï¼Œä¿®æ”¹æ–‡ä»¶å¤¹åç§°**
