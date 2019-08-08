@@ -3,7 +3,7 @@
 <a name="Template"></a>
 # 1. GrpcServiceTemplate<br />
 
-- 源码地址：[https://github.com/mojinxun/template.git](https://github.com/mojinxun/template.git)
+- 源码地址：[https://github.com/overtly/template.git](https://github.com/overtly/template.git)
 - identity：Overt.GrpcTemplate.Service v 1.0.1
 
 <a name="2f085113"></a>
@@ -52,7 +52,7 @@ dotnet new OvertCoreGrpcService -na Overt.GrpcTest -s GrpcTestService -se OvertG
 <a name="67cb4465"></a>
 ### 2. TemplateService
 
-- 源码地址：[https://github.com/mojinxun/template.git](http://10.0.150.1/dotnetcore/template.git)
+- 源码地址：[https://github.com/overtly/template.git](https://github.com/overtly/template.git)
 - identity：Overt.Template.Service v 1.0.0
 
 <a name="2f085113-1"></a>
