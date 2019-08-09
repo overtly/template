@@ -4,7 +4,7 @@
   "classifications": [ "Common", "Console" ],
   "identity": "Overt.GrpcTemplate.Service",
   "name": "Overt.GrpcTemplate.Service",
-  "shortName": "OvertCoreGrpcService",
+  "shortName": "OvertGrpcTemplate",
   "preferNameDirectory": true,
   "symbols": {
     "namespace": {

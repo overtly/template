@@ -4,7 +4,7 @@
   "classifications": [ "Common", "Console" ],
   "identity": "Overt.Template.Service",
   "name": "Overt.Template.Service",
-  "shortName": "OvertCoreService",
+  "shortName": "OvertTemplate",
   "preferNameDirectory": true,
   "symbols": {
     "namespace": {
