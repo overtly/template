@@ -18,7 +18,7 @@ namespace Overt.Template.Service
         {
             return Task.Factory.StartNew(() =>
             {
-                _logger.LogError("TemplateService开启");
+                _logger.LogError($"{typeof(HostedService).Namespace.Replace(".", "")}开启成功");
             }, cancellationToken);
         }
 
@@ -26,7 +26,7 @@ namespace Overt.Template.Service
         {
             return Task.Factory.StartNew(() =>
             {
-                _logger.LogError("TemplateService停止");
+                _logger.LogError($"{typeof(HostedService).Namespace.Replace(".", "")}停止成功");
             }, cancellationToken);
         }
     }

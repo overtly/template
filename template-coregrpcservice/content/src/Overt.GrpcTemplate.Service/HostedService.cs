@@ -32,11 +32,11 @@ namespace Overt.GrpcTemplate.Service
                 };
                 GrpcServiceManager.Start(BindService(_grpcServImpl), channelOptions: channelOptions, whenException: (ex) =>
                 {
-                    _logger.LogError($"{nameof(Overt.GrpcTemplate.Service).Replace(".", "")}服务器开启失败");
+                    _logger.LogError(ex, $"{typeof(HostedService).Namespace.Replace(".", "")}开启失败");
                     throw ex;
                 });
 
-                _logger.LogError($"{nameof(Overt.GrpcTemplate.Service).Replace(".", "")}开启");
+                _logger.LogError($"{nameof(Overt.GrpcTemplate.Service).Replace(".", "")}开启成功");
             }, cancellationToken);
         }
 
@@ -46,7 +46,7 @@ namespace Overt.GrpcTemplate.Service
             {
                 GrpcServiceManager.Stop();
 
-                _logger.LogError($"{nameof(Overt.GrpcTemplate.Service).Replace(".", "")}停止");
+                _logger.LogError($"{typeof(HostedService).Namespace.Replace(".", "")}停止成功");
             }, cancellationToken);
         }
     }
