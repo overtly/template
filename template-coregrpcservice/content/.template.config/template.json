@@ -10,28 +10,28 @@
     "namespace": {
       "type": "parameter",
       "isRequired": true,
-      "description": "命名空间[namespace]",
+      "description": "命名空间前缀 [namespace]",
       "defaultValue": "Overt.GrpcTemplate",
       "replaces": "Overt.GrpcTemplate"
     },
     "service": {
       "type": "parameter",
       "isRequired": true,
-      "description": "proto file: service [service] {}",
+      "description": "Grpc服务名称 [service]",
       "defaultValue": "TemplateService",
       "replaces": "TemplateService"
     },
-    "servicename": {
+    "regname": {
       "type": "parameter",
       "isRequired": true,
-      "description": "appsettings.json: GrpcServer.Service.Name [servicename]",
+      "description": "注册Consul的服务名称 [servicename]",
       "defaultValue": "OvertGrpcTemplateService",
       "replaces": "OvertGrpcTemplateService"
     },
     "port": {
       "type": "parameter",
       "isRequired": true,
-      "description": "appsettings.json: GrpcServer.Service.Port [serviceport]",
+      "description": "服务端口号 [serviceport]",
       "defaultValue": "10001",
       "replaces": "10000"
     }
