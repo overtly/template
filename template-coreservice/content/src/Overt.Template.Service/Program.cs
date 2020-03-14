@@ -20,7 +20,8 @@ namespace Overt.Template.Service
                })
                .ConfigureLogging(logger =>
                {
-
+                   logger.AddFilter("Microsoft", LogLevel.Critical)
+                         .AddFilter("System", LogLevel.Critical);
                })
                .ConfigureServices(ConfigureServices)
                .Build();
