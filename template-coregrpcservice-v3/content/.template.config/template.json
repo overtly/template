@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "yaofeng",
+  "classifications": [ "Common", "Console" ],
+  "identity": "Overt.GrpcTemplateV3.Service",
+  "name": "Overt.GrpcTemplateV3.Service",
+  "shortName": "OvertGrpcTemplateV3",
+  "preferNameDirectory": true,
+  "symbols": {
+    "namespace": {
+      "type": "parameter",
+      "isRequired": true,
+      "description": "命名空间[namespace]",
+      "defaultValue": "Overt.GrpcTemplate",
+      "replaces": "Overt.GrpcTemplate"
+    },
+    "service": {
+      "type": "parameter",
+      "isRequired": true,
+      "description": "proto file: service [service] {}",
+      "defaultValue": "TemplateService",
+      "replaces": "TemplateService"
+    },
+    "servicename": {
+      "type": "parameter",
+      "isRequired": true,
+      "description": "appsettings.json: GrpcServer.Service.Name [servicename]",
+      "defaultValue": "OvertGrpcTemplateService",
+      "replaces": "OvertGrpcTemplateService"
+    },
+    "port": {
+      "type": "parameter",
+      "isRequired": true,
+      "description": "appsettings.json: GrpcServer.Service.Port [serviceport]",
+      "defaultValue": "10001",
+      "replaces": "10000"
+    }
+  }
+}

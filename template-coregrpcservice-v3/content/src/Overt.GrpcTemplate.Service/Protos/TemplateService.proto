@@ -1,0 +1,8 @@
+﻿syntax = "proto3";
+package Overt.GrpcTemplate.Service.Grpc;
+
+import "Common.proto";
+
+service TemplateService{
+	rpc Logs_Execute(EmptyRequest) returns (EmptyResponse){} 
+}

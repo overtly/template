@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Overt.TemplateV3.Service</id>
+    <version>1.0.0</version>
+    <description>
+      Creates the Service console app (by dotnetcore 3.1).
+    </description>
+    <authors>yaofeng</authors>
+    <packageTypes>
+      <packageType name="Template" />
+    </packageTypes>
+  </metadata>
+  <files>
+    <file src="content\**" target="content" exclude="**.vs\**;**\**\**\bin\**;**\**\**\obj\**" />
+  </files>
+</package>

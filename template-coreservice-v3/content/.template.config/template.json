@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "yaofeng",
+  "classifications": [ "Common", "Console" ],
+  "identity": "Overt.TemplateV3.Service",
+  "name": "Overt.TemplateV3.Service",
+  "shortName": "OvertTemplateV3",
+  "preferNameDirectory": true,
+  "symbols": {
+    "namespace": {
+      "type": "parameter",
+      "isRequired": true,
+      "description": "[namespace].Service",
+      "defaultValue": "Overt.Template",
+      "replaces": "Overt.Template"
+    }
+  }
+}
