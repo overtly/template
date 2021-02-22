@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>Overt.GrpcTemplateV3.Service</id>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <description>
       Creates the Grpc Service console app (by dotnetcore 3.1).
     </description>

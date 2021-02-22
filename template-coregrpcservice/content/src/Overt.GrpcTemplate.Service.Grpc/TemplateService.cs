@@ -22,10 +22,10 @@ namespace Overt.GrpcTemplate.Service.Grpc {
     static TemplateServiceReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChVUZW1wbGF0ZVNlcnZpY2UucHJvdG8SH1NvZGFvLkdycGNUZW1wbGF0ZS5T",
+            "ChVUZW1wbGF0ZVNlcnZpY2UucHJvdG8SH092ZXJ0LkdycGNUZW1wbGF0ZS5T",
             "ZXJ2aWNlLkdycGMaDENvbW1vbi5wcm90bzKCAQoPVGVtcGxhdGVTZXJ2aWNl",
-            "Em8KDExvZ3NfRXhlY3V0ZRItLlNvZGFvLkdycGNUZW1wbGF0ZS5TZXJ2aWNl",
-            "LkdycGMuRW1wdHlSZXF1ZXN0Gi4uU29kYW8uR3JwY1RlbXBsYXRlLlNlcnZp",
+            "Em8KDExvZ3NfRXhlY3V0ZRItLk92ZXJ0LkdycGNUZW1wbGF0ZS5TZXJ2aWNl",
+            "LkdycGMuRW1wdHlSZXF1ZXN0Gi4uT3ZlcnQuR3JwY1RlbXBsYXRlLlNlcnZp",
             "Y2UuR3JwYy5FbXB0eVJlc3BvbnNlIgBiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Overt.GrpcTemplate.Service.Grpc.CommonReflection.Descriptor, },

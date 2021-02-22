@@ -22,18 +22,52 @@ namespace Overt.GrpcTemplate.Service.Grpc {
     static CommonReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CgxDb21tb24ucHJvdG8SH1NvZGFvLkdycGNUZW1wbGF0ZS5TZXJ2aWNlLkdy",
-            "cGMiDgoMRW1wdHlSZXF1ZXN0Ig8KDUVtcHR5UmVzcG9uc2ViBnByb3RvMw=="));
+            "CgxDb21tb24ucHJvdG8SH092ZXJ0LkdycGNUZW1wbGF0ZS5TZXJ2aWNlLkdy",
+            "cGMiDgoMRW1wdHlSZXF1ZXN0Ii8KDEludDMyUmVxdWVzdBIQCghJc01hc3Rl",
+            "chgBIAEoCBINCgVWYWx1ZRgCIAEoBSIvCgxJbnQ2NFJlcXVlc3QSEAoISXNN",
+            "YXN0ZXIYASABKAgSDQoFVmFsdWUYAiABKAMiMAoNU3RyaW5nUmVxdWVzdBIQ",
+            "CghJc01hc3RlchgBIAEoCBINCgVWYWx1ZRgCIAEoCSI1ChJTdHJpbmdBcnJh",
+            "eVJlcXVlc3QSEAoISXNNYXN0ZXIYASABKAgSDQoFVmFsdWUYAiADKAkiDwoN",
+            "RW1wdHlSZXNwb25zZSIxCgxCb29sUmVzcG9uc2USDwoHU3VjY2VzcxgBIAEo",
+            "CBIQCghFcnJvck1zZxgCIAEoCSJBCg5TdHJpbmdSZXNwb25zZRIPCgdTdWNj",
+            "ZXNzGAEgASgIEhAKCEVycm9yTXNnGAIgASgJEgwKBERhdGEYAyABKAkiQAoN",
+            "SW50MzJSZXNwb25zZRIPCgdTdWNjZXNzGAEgASgIEhAKCEVycm9yTXNnGAIg",
+            "ASgJEgwKBERhdGEYAyABKAUiQAoNSW50NjRSZXNwb25zZRIPCgdTdWNjZXNz",
+            "GAEgASgIEhAKCEVycm9yTXNnGAIgASgJEgwKBERhdGEYAyABKAMiRgoTU3Ry",
+            "aW5nQXJyYXlSZXNwb25zZRIPCgdTdWNjZXNzGAEgASgIEhAKCEVycm9yTXNn",
+            "GAIgASgJEgwKBERhdGEYAyADKAkqLQoNRW51bUJvb2xWYWx1ZRIHCgNBbGwQ",
+            "ABIICgRUcnVlEAESCQoFRmFsc2UQAmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Overt.GrpcTemplate.Service.Grpc.EnumBoolValue), }, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Overt.GrpcTemplate.Service.Grpc.EmptyRequest), global::Overt.GrpcTemplate.Service.Grpc.EmptyRequest.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Overt.GrpcTemplate.Service.Grpc.EmptyResponse), global::Overt.GrpcTemplate.Service.Grpc.EmptyResponse.Parser, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Overt.GrpcTemplate.Service.Grpc.Int32Request), global::Overt.GrpcTemplate.Service.Grpc.Int32Request.Parser, new[]{ "IsMaster", "Value" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Overt.GrpcTemplate.Service.Grpc.Int64Request), global::Overt.GrpcTemplate.Service.Grpc.Int64Request.Parser, new[]{ "IsMaster", "Value" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Overt.GrpcTemplate.Service.Grpc.StringRequest), global::Overt.GrpcTemplate.Service.Grpc.StringRequest.Parser, new[]{ "IsMaster", "Value" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Overt.GrpcTemplate.Service.Grpc.StringArrayRequest), global::Overt.GrpcTemplate.Service.Grpc.StringArrayRequest.Parser, new[]{ "IsMaster", "Value" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Overt.GrpcTemplate.Service.Grpc.EmptyResponse), global::Overt.GrpcTemplate.Service.Grpc.EmptyResponse.Parser, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Overt.GrpcTemplate.Service.Grpc.BoolResponse), global::Overt.GrpcTemplate.Service.Grpc.BoolResponse.Parser, new[]{ "Success", "ErrorMsg" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Overt.GrpcTemplate.Service.Grpc.StringResponse), global::Overt.GrpcTemplate.Service.Grpc.StringResponse.Parser, new[]{ "Success", "ErrorMsg", "Data" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Overt.GrpcTemplate.Service.Grpc.Int32Response), global::Overt.GrpcTemplate.Service.Grpc.Int32Response.Parser, new[]{ "Success", "ErrorMsg", "Data" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Overt.GrpcTemplate.Service.Grpc.Int64Response), global::Overt.GrpcTemplate.Service.Grpc.Int64Response.Parser, new[]{ "Success", "ErrorMsg", "Data" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Overt.GrpcTemplate.Service.Grpc.StringArrayResponse), global::Overt.GrpcTemplate.Service.Grpc.StringArrayResponse.Parser, new[]{ "Success", "ErrorMsg", "Data" }, null, null, null)
           }));
     }
     #endregion
 
   }
+  #region Enums
+  /// <summary>
+  /// bool 的查询
+  /// </summary>
+  public enum EnumBoolValue {
+    [pbr::OriginalName("All")] All = 0,
+    [pbr::OriginalName("True")] True = 1,
+    [pbr::OriginalName("False")] False = 2,
+  }
+
+  #endregion
+
   #region Messages
   public sealed partial class EmptyRequest : pb::IMessage<EmptyRequest> {
     private static readonly pb::MessageParser<EmptyRequest> _parser = new pb::MessageParser<EmptyRequest>(() => new EmptyRequest());
@@ -124,6 +158,590 @@ namespace Overt.GrpcTemplate.Service.Grpc {
 
   }
 
+  public sealed partial class Int32Request : pb::IMessage<Int32Request> {
+    private static readonly pb::MessageParser<Int32Request> _parser = new pb::MessageParser<Int32Request>(() => new Int32Request());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<Int32Request> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Overt.GrpcTemplate.Service.Grpc.CommonReflection.Descriptor.MessageTypes[1]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Int32Request() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Int32Request(Int32Request other) : this() {
+      isMaster_ = other.isMaster_;
+      value_ = other.value_;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Int32Request Clone() {
+      return new Int32Request(this);
+    }
+
+    /// <summary>Field number for the "IsMaster" field.</summary>
+    public const int IsMasterFieldNumber = 1;
+    private bool isMaster_;
+    /// <summary>
+    /// 是否查询主库
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool IsMaster {
+      get { return isMaster_; }
+      set {
+        isMaster_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "Value" field.</summary>
+    public const int ValueFieldNumber = 2;
+    private int value_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int Value {
+      get { return value_; }
+      set {
+        value_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as Int32Request);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(Int32Request other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (IsMaster != other.IsMaster) return false;
+      if (Value != other.Value) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (IsMaster != false) hash ^= IsMaster.GetHashCode();
+      if (Value != 0) hash ^= Value.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (IsMaster != false) {
+        output.WriteRawTag(8);
+        output.WriteBool(IsMaster);
+      }
+      if (Value != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(Value);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (IsMaster != false) {
+        size += 1 + 1;
+      }
+      if (Value != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Value);
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(Int32Request other) {
+      if (other == null) {
+        return;
+      }
+      if (other.IsMaster != false) {
+        IsMaster = other.IsMaster;
+      }
+      if (other.Value != 0) {
+        Value = other.Value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 8: {
+            IsMaster = input.ReadBool();
+            break;
+          }
+          case 16: {
+            Value = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class Int64Request : pb::IMessage<Int64Request> {
+    private static readonly pb::MessageParser<Int64Request> _parser = new pb::MessageParser<Int64Request>(() => new Int64Request());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<Int64Request> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Overt.GrpcTemplate.Service.Grpc.CommonReflection.Descriptor.MessageTypes[2]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Int64Request() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Int64Request(Int64Request other) : this() {
+      isMaster_ = other.isMaster_;
+      value_ = other.value_;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Int64Request Clone() {
+      return new Int64Request(this);
+    }
+
+    /// <summary>Field number for the "IsMaster" field.</summary>
+    public const int IsMasterFieldNumber = 1;
+    private bool isMaster_;
+    /// <summary>
+    /// 是否查询主库
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool IsMaster {
+      get { return isMaster_; }
+      set {
+        isMaster_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "Value" field.</summary>
+    public const int ValueFieldNumber = 2;
+    private long value_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long Value {
+      get { return value_; }
+      set {
+        value_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as Int64Request);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(Int64Request other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (IsMaster != other.IsMaster) return false;
+      if (Value != other.Value) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (IsMaster != false) hash ^= IsMaster.GetHashCode();
+      if (Value != 0L) hash ^= Value.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (IsMaster != false) {
+        output.WriteRawTag(8);
+        output.WriteBool(IsMaster);
+      }
+      if (Value != 0L) {
+        output.WriteRawTag(16);
+        output.WriteInt64(Value);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (IsMaster != false) {
+        size += 1 + 1;
+      }
+      if (Value != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(Value);
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(Int64Request other) {
+      if (other == null) {
+        return;
+      }
+      if (other.IsMaster != false) {
+        IsMaster = other.IsMaster;
+      }
+      if (other.Value != 0L) {
+        Value = other.Value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 8: {
+            IsMaster = input.ReadBool();
+            break;
+          }
+          case 16: {
+            Value = input.ReadInt64();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class StringRequest : pb::IMessage<StringRequest> {
+    private static readonly pb::MessageParser<StringRequest> _parser = new pb::MessageParser<StringRequest>(() => new StringRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<StringRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Overt.GrpcTemplate.Service.Grpc.CommonReflection.Descriptor.MessageTypes[3]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public StringRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public StringRequest(StringRequest other) : this() {
+      isMaster_ = other.isMaster_;
+      value_ = other.value_;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public StringRequest Clone() {
+      return new StringRequest(this);
+    }
+
+    /// <summary>Field number for the "IsMaster" field.</summary>
+    public const int IsMasterFieldNumber = 1;
+    private bool isMaster_;
+    /// <summary>
+    /// 是否查询主库
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool IsMaster {
+      get { return isMaster_; }
+      set {
+        isMaster_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "Value" field.</summary>
+    public const int ValueFieldNumber = 2;
+    private string value_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Value {
+      get { return value_; }
+      set {
+        value_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as StringRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(StringRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (IsMaster != other.IsMaster) return false;
+      if (Value != other.Value) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (IsMaster != false) hash ^= IsMaster.GetHashCode();
+      if (Value.Length != 0) hash ^= Value.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (IsMaster != false) {
+        output.WriteRawTag(8);
+        output.WriteBool(IsMaster);
+      }
+      if (Value.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(Value);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (IsMaster != false) {
+        size += 1 + 1;
+      }
+      if (Value.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Value);
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(StringRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.IsMaster != false) {
+        IsMaster = other.IsMaster;
+      }
+      if (other.Value.Length != 0) {
+        Value = other.Value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 8: {
+            IsMaster = input.ReadBool();
+            break;
+          }
+          case 18: {
+            Value = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class StringArrayRequest : pb::IMessage<StringArrayRequest> {
+    private static readonly pb::MessageParser<StringArrayRequest> _parser = new pb::MessageParser<StringArrayRequest>(() => new StringArrayRequest());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<StringArrayRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Overt.GrpcTemplate.Service.Grpc.CommonReflection.Descriptor.MessageTypes[4]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public StringArrayRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public StringArrayRequest(StringArrayRequest other) : this() {
+      isMaster_ = other.isMaster_;
+      value_ = other.value_.Clone();
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public StringArrayRequest Clone() {
+      return new StringArrayRequest(this);
+    }
+
+    /// <summary>Field number for the "IsMaster" field.</summary>
+    public const int IsMasterFieldNumber = 1;
+    private bool isMaster_;
+    /// <summary>
+    /// 是否查询主库
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool IsMaster {
+      get { return isMaster_; }
+      set {
+        isMaster_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "Value" field.</summary>
+    public const int ValueFieldNumber = 2;
+    private static readonly pb::FieldCodec<string> _repeated_value_codec
+        = pb::FieldCodec.ForString(18);
+    private readonly pbc::RepeatedField<string> value_ = new pbc::RepeatedField<string>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<string> Value {
+      get { return value_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as StringArrayRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(StringArrayRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (IsMaster != other.IsMaster) return false;
+      if(!value_.Equals(other.value_)) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (IsMaster != false) hash ^= IsMaster.GetHashCode();
+      hash ^= value_.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (IsMaster != false) {
+        output.WriteRawTag(8);
+        output.WriteBool(IsMaster);
+      }
+      value_.WriteTo(output, _repeated_value_codec);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (IsMaster != false) {
+        size += 1 + 1;
+      }
+      size += value_.CalculateSize(_repeated_value_codec);
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(StringArrayRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.IsMaster != false) {
+        IsMaster = other.IsMaster;
+      }
+      value_.Add(other.value_);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 8: {
+            IsMaster = input.ReadBool();
+            break;
+          }
+          case 18: {
+            value_.AddEntriesFrom(input, _repeated_value_codec);
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
   public sealed partial class EmptyResponse : pb::IMessage<EmptyResponse> {
     private static readonly pb::MessageParser<EmptyResponse> _parser = new pb::MessageParser<EmptyResponse>(() => new EmptyResponse());
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -131,7 +749,7 @@ namespace Overt.GrpcTemplate.Service.Grpc {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Overt.GrpcTemplate.Service.Grpc.CommonReflection.Descriptor.MessageTypes[1]; }
+      get { return global::Overt.GrpcTemplate.Service.Grpc.CommonReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -207,6 +825,835 @@ namespace Overt.GrpcTemplate.Service.Grpc {
           default:
             input.SkipLastField();
             break;
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class BoolResponse : pb::IMessage<BoolResponse> {
+    private static readonly pb::MessageParser<BoolResponse> _parser = new pb::MessageParser<BoolResponse>(() => new BoolResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<BoolResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Overt.GrpcTemplate.Service.Grpc.CommonReflection.Descriptor.MessageTypes[6]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public BoolResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public BoolResponse(BoolResponse other) : this() {
+      success_ = other.success_;
+      errorMsg_ = other.errorMsg_;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public BoolResponse Clone() {
+      return new BoolResponse(this);
+    }
+
+    /// <summary>Field number for the "Success" field.</summary>
+    public const int SuccessFieldNumber = 1;
+    private bool success_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Success {
+      get { return success_; }
+      set {
+        success_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "ErrorMsg" field.</summary>
+    public const int ErrorMsgFieldNumber = 2;
+    private string errorMsg_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string ErrorMsg {
+      get { return errorMsg_; }
+      set {
+        errorMsg_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as BoolResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(BoolResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Success != other.Success) return false;
+      if (ErrorMsg != other.ErrorMsg) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Success != false) hash ^= Success.GetHashCode();
+      if (ErrorMsg.Length != 0) hash ^= ErrorMsg.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Success != false) {
+        output.WriteRawTag(8);
+        output.WriteBool(Success);
+      }
+      if (ErrorMsg.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(ErrorMsg);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Success != false) {
+        size += 1 + 1;
+      }
+      if (ErrorMsg.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ErrorMsg);
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(BoolResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Success != false) {
+        Success = other.Success;
+      }
+      if (other.ErrorMsg.Length != 0) {
+        ErrorMsg = other.ErrorMsg;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 8: {
+            Success = input.ReadBool();
+            break;
+          }
+          case 18: {
+            ErrorMsg = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class StringResponse : pb::IMessage<StringResponse> {
+    private static readonly pb::MessageParser<StringResponse> _parser = new pb::MessageParser<StringResponse>(() => new StringResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<StringResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Overt.GrpcTemplate.Service.Grpc.CommonReflection.Descriptor.MessageTypes[7]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public StringResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public StringResponse(StringResponse other) : this() {
+      success_ = other.success_;
+      errorMsg_ = other.errorMsg_;
+      data_ = other.data_;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public StringResponse Clone() {
+      return new StringResponse(this);
+    }
+
+    /// <summary>Field number for the "Success" field.</summary>
+    public const int SuccessFieldNumber = 1;
+    private bool success_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Success {
+      get { return success_; }
+      set {
+        success_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "ErrorMsg" field.</summary>
+    public const int ErrorMsgFieldNumber = 2;
+    private string errorMsg_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string ErrorMsg {
+      get { return errorMsg_; }
+      set {
+        errorMsg_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "Data" field.</summary>
+    public const int DataFieldNumber = 3;
+    private string data_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Data {
+      get { return data_; }
+      set {
+        data_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as StringResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(StringResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Success != other.Success) return false;
+      if (ErrorMsg != other.ErrorMsg) return false;
+      if (Data != other.Data) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Success != false) hash ^= Success.GetHashCode();
+      if (ErrorMsg.Length != 0) hash ^= ErrorMsg.GetHashCode();
+      if (Data.Length != 0) hash ^= Data.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Success != false) {
+        output.WriteRawTag(8);
+        output.WriteBool(Success);
+      }
+      if (ErrorMsg.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(ErrorMsg);
+      }
+      if (Data.Length != 0) {
+        output.WriteRawTag(26);
+        output.WriteString(Data);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Success != false) {
+        size += 1 + 1;
+      }
+      if (ErrorMsg.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ErrorMsg);
+      }
+      if (Data.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Data);
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(StringResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Success != false) {
+        Success = other.Success;
+      }
+      if (other.ErrorMsg.Length != 0) {
+        ErrorMsg = other.ErrorMsg;
+      }
+      if (other.Data.Length != 0) {
+        Data = other.Data;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 8: {
+            Success = input.ReadBool();
+            break;
+          }
+          case 18: {
+            ErrorMsg = input.ReadString();
+            break;
+          }
+          case 26: {
+            Data = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class Int32Response : pb::IMessage<Int32Response> {
+    private static readonly pb::MessageParser<Int32Response> _parser = new pb::MessageParser<Int32Response>(() => new Int32Response());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<Int32Response> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Overt.GrpcTemplate.Service.Grpc.CommonReflection.Descriptor.MessageTypes[8]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Int32Response() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Int32Response(Int32Response other) : this() {
+      success_ = other.success_;
+      errorMsg_ = other.errorMsg_;
+      data_ = other.data_;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Int32Response Clone() {
+      return new Int32Response(this);
+    }
+
+    /// <summary>Field number for the "Success" field.</summary>
+    public const int SuccessFieldNumber = 1;
+    private bool success_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Success {
+      get { return success_; }
+      set {
+        success_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "ErrorMsg" field.</summary>
+    public const int ErrorMsgFieldNumber = 2;
+    private string errorMsg_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string ErrorMsg {
+      get { return errorMsg_; }
+      set {
+        errorMsg_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "Data" field.</summary>
+    public const int DataFieldNumber = 3;
+    private int data_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int Data {
+      get { return data_; }
+      set {
+        data_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as Int32Response);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(Int32Response other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Success != other.Success) return false;
+      if (ErrorMsg != other.ErrorMsg) return false;
+      if (Data != other.Data) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Success != false) hash ^= Success.GetHashCode();
+      if (ErrorMsg.Length != 0) hash ^= ErrorMsg.GetHashCode();
+      if (Data != 0) hash ^= Data.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Success != false) {
+        output.WriteRawTag(8);
+        output.WriteBool(Success);
+      }
+      if (ErrorMsg.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(ErrorMsg);
+      }
+      if (Data != 0) {
+        output.WriteRawTag(24);
+        output.WriteInt32(Data);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Success != false) {
+        size += 1 + 1;
+      }
+      if (ErrorMsg.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ErrorMsg);
+      }
+      if (Data != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Data);
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(Int32Response other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Success != false) {
+        Success = other.Success;
+      }
+      if (other.ErrorMsg.Length != 0) {
+        ErrorMsg = other.ErrorMsg;
+      }
+      if (other.Data != 0) {
+        Data = other.Data;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 8: {
+            Success = input.ReadBool();
+            break;
+          }
+          case 18: {
+            ErrorMsg = input.ReadString();
+            break;
+          }
+          case 24: {
+            Data = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class Int64Response : pb::IMessage<Int64Response> {
+    private static readonly pb::MessageParser<Int64Response> _parser = new pb::MessageParser<Int64Response>(() => new Int64Response());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<Int64Response> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Overt.GrpcTemplate.Service.Grpc.CommonReflection.Descriptor.MessageTypes[9]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Int64Response() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Int64Response(Int64Response other) : this() {
+      success_ = other.success_;
+      errorMsg_ = other.errorMsg_;
+      data_ = other.data_;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Int64Response Clone() {
+      return new Int64Response(this);
+    }
+
+    /// <summary>Field number for the "Success" field.</summary>
+    public const int SuccessFieldNumber = 1;
+    private bool success_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Success {
+      get { return success_; }
+      set {
+        success_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "ErrorMsg" field.</summary>
+    public const int ErrorMsgFieldNumber = 2;
+    private string errorMsg_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string ErrorMsg {
+      get { return errorMsg_; }
+      set {
+        errorMsg_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "Data" field.</summary>
+    public const int DataFieldNumber = 3;
+    private long data_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public long Data {
+      get { return data_; }
+      set {
+        data_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as Int64Response);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(Int64Response other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Success != other.Success) return false;
+      if (ErrorMsg != other.ErrorMsg) return false;
+      if (Data != other.Data) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Success != false) hash ^= Success.GetHashCode();
+      if (ErrorMsg.Length != 0) hash ^= ErrorMsg.GetHashCode();
+      if (Data != 0L) hash ^= Data.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Success != false) {
+        output.WriteRawTag(8);
+        output.WriteBool(Success);
+      }
+      if (ErrorMsg.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(ErrorMsg);
+      }
+      if (Data != 0L) {
+        output.WriteRawTag(24);
+        output.WriteInt64(Data);
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Success != false) {
+        size += 1 + 1;
+      }
+      if (ErrorMsg.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ErrorMsg);
+      }
+      if (Data != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(Data);
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(Int64Response other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Success != false) {
+        Success = other.Success;
+      }
+      if (other.ErrorMsg.Length != 0) {
+        ErrorMsg = other.ErrorMsg;
+      }
+      if (other.Data != 0L) {
+        Data = other.Data;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 8: {
+            Success = input.ReadBool();
+            break;
+          }
+          case 18: {
+            ErrorMsg = input.ReadString();
+            break;
+          }
+          case 24: {
+            Data = input.ReadInt64();
+            break;
+          }
+        }
+      }
+    }
+
+  }
+
+  public sealed partial class StringArrayResponse : pb::IMessage<StringArrayResponse> {
+    private static readonly pb::MessageParser<StringArrayResponse> _parser = new pb::MessageParser<StringArrayResponse>(() => new StringArrayResponse());
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<StringArrayResponse> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Overt.GrpcTemplate.Service.Grpc.CommonReflection.Descriptor.MessageTypes[10]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public StringArrayResponse() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public StringArrayResponse(StringArrayResponse other) : this() {
+      success_ = other.success_;
+      errorMsg_ = other.errorMsg_;
+      data_ = other.data_.Clone();
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public StringArrayResponse Clone() {
+      return new StringArrayResponse(this);
+    }
+
+    /// <summary>Field number for the "Success" field.</summary>
+    public const int SuccessFieldNumber = 1;
+    private bool success_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Success {
+      get { return success_; }
+      set {
+        success_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "ErrorMsg" field.</summary>
+    public const int ErrorMsgFieldNumber = 2;
+    private string errorMsg_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string ErrorMsg {
+      get { return errorMsg_; }
+      set {
+        errorMsg_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "Data" field.</summary>
+    public const int DataFieldNumber = 3;
+    private static readonly pb::FieldCodec<string> _repeated_data_codec
+        = pb::FieldCodec.ForString(26);
+    private readonly pbc::RepeatedField<string> data_ = new pbc::RepeatedField<string>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<string> Data {
+      get { return data_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as StringArrayResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(StringArrayResponse other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Success != other.Success) return false;
+      if (ErrorMsg != other.ErrorMsg) return false;
+      if(!data_.Equals(other.data_)) return false;
+      return true;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Success != false) hash ^= Success.GetHashCode();
+      if (ErrorMsg.Length != 0) hash ^= ErrorMsg.GetHashCode();
+      hash ^= data_.GetHashCode();
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+      if (Success != false) {
+        output.WriteRawTag(8);
+        output.WriteBool(Success);
+      }
+      if (ErrorMsg.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(ErrorMsg);
+      }
+      data_.WriteTo(output, _repeated_data_codec);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Success != false) {
+        size += 1 + 1;
+      }
+      if (ErrorMsg.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(ErrorMsg);
+      }
+      size += data_.CalculateSize(_repeated_data_codec);
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(StringArrayResponse other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Success != false) {
+        Success = other.Success;
+      }
+      if (other.ErrorMsg.Length != 0) {
+        ErrorMsg = other.ErrorMsg;
+      }
+      data_.Add(other.data_);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            input.SkipLastField();
+            break;
+          case 8: {
+            Success = input.ReadBool();
+            break;
+          }
+          case 18: {
+            ErrorMsg = input.ReadString();
+            break;
+          }
+          case 26: {
+            data_.AddEntriesFrom(input, _repeated_data_codec);
+            break;
+          }
         }
       }
     }
